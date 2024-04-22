@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <unistd.h>  // For sleep function
+
+int main(void)
+{
+    printf("tran duc tin\n");
+
+    // Add a delay of 30 seconds
+    printf("Waiting for 30 seconds...\n");
+    sleep(30);  // Delay for 30 seconds
+
+    int i;
+    for (i = 0; i < 100; i++) {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
